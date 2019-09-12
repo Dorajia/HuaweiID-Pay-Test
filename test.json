@@ -1,0 +1,41 @@
+{
+  "Basic Info": {
+    "Name": "Dora Jia",
+    "Gender": "Female",
+    "Age": "20",
+    "Phone": "1234567",
+    "Email": "yuanyuan_jia@cc.com"
+  },
+  "Education": [
+    {
+      "School": "East China Normal University",
+      "Time": "2008-2012",
+      "Degree": "Bachelor of Software Engineering"
+    },
+    {
+      "School": "San Jose State University",
+      "Time": "2017-current",
+      "Degree": "Master of Software Engineering"
+    }
+  ],
+  "Work": {
+    "Company": "Technical Support Engineering",
+    "Time": "2017-current",
+    "Description": "Served as technical support engineer for Microsoft Office 365. Helped global customers troubleshoot and resolve technical problems with Office 365 Exchange Server."
+  },
+  "Project": {
+    "Name": "Dora Jia",
+    "Description": "Aims to build an online event platform application, in which users can search and attend to different types of events, as well as post their own events to public."
+  },
+  "Social": {
+    "Linkedin": "Dora Jia",
+    "Facebook": "Female",
+    "Github": "20",
+    "Twitter": "1234567"
+  },
+  "Summary": {
+    "Summary1": "Passionate and attentive software engineer who has spent 7 years studying in software engineering area.",
+    "Summary2": "Good team player and quick leaner– able to learn and master new technologies very quickly.",
+    "Summary3": "Known for high efficiency, good at time management and plan scheduling."
+  }
+}
