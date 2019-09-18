@@ -23,10 +23,9 @@ import org.json.JSONObject;
 
 import java.io.InputStream;
 import android.app.SearchManager;
-
-import com.huawei.android.hms.agent.HMSAgent;
+/*import com.huawei.android.hms.agent.HMSAgent;
 import com.huawei.android.hms.agent.common.handler.CheckUpdateHandler;
-import com.huawei.android.hms.agent.common.handler.ConnectHandler;
+import com.huawei.android.hms.agent.common.handler.ConnectHandler;*/
 
 public class MainActivity extends AppCompatActivity
     implements MainFragmentCallbacks, NavigationDrawerFragment.Callbacks {
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        HMSAgent.connect(this, new ConnectHandler() {
+ /*       HMSAgent.connect(this, new ConnectHandler() {
             @Override
             public void onConnect(int rst) {
                 Log.i(TAG, "HMS connected " + rst);
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity
             public void onResult(int rst) {
                 Log.i(TAG, "check app update rst:" + rst);
             }
-        });
+        });*/
 
         // ActionBar / Toolbar / app bar
         Toolbar appbar = (Toolbar) findViewById(R.id.app_bar);

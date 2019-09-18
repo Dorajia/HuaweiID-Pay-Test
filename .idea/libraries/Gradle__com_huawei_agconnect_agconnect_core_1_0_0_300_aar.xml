@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.agconnect:agconnect-core:1.0.0.300@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/agconnect-core-1.0.0.300.aar/f851dd581ab01243b4ed54afaf19e28b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/agconnect-core-1.0.0.300.aar/f851dd581ab01243b4ed54afaf19e28b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

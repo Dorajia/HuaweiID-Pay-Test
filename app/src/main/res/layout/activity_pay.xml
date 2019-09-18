@@ -1,100 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars = "vertical"
     tools:context=".PayActivity">
 
+    <Button
+        android:id="@+id/hwpay_isBillingSupported"
+        style="@style/ButtonStyle"
+        android:text="Is Billing Supported" />
+
+
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/spinner_getdetail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78"
-        app:layout_constraintVertical_chainStyle="spread">
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_iap"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:id="@+id/hwpay_getPurchases"
+            android:layout_width="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Get Purchase Goods" />
 
-        <Button
-            android:id="@+id/btn_pay"
+        <Spinner
+            android:id="@+id/spinner_getPurchaseGoods"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/recycler_view_divider_color"
-            android:text="Pay" />
-
-        <Button
-            android:id="@+id/btn_checkpay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Check Pay" />
-
-        <Button
-            android:id="@+id/btn_getallproductdetail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Get Product Detail" />
+            android:background="@color/primary_light"
+            android:spinnerMode="dropdown"
+            android:padding = "2dp"
+            android:layout_margin = "2dp" />
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spinner_getdetail"
-        android:layout_width="0dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@color/recycler_view_divider_color"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toTopOf="@+id/spinner_pmspay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <Spinner
-        android:id="@+id/spinner_pmspay"
-        android:layout_width="0dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@color/recycler_view_divider_color"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_getdetail" />
+        <Button
+            android:id="@+id/hwpay_getSkuDetail"
+            android:layout_width="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Get SKU details" />
 
-    <EditText
-        android:id="@+id/et_amount"
-        style="@android:style/Widget.Holo.Light.EditText"
-        android:layout_width="168dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:inputType="number|text"
-        android:text="How Much?"
-        android:textColor="@color/navigation_bar"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_pmspay" />
+        <Spinner
+            android:id="@+id/spinner_getSkuDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:spinnerMode="dropdown"
+            android:padding = "2dp"
+            android:layout_margin = "2dp"/>
+    </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Test Product" />
+
+        <EditText
+            android:id="@+id/purchaseAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Pay Amount" />
+
+        <Button
+            android:id="@+id/hwpay_getBuyIntentWithPrice"
+            android:layout_width="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Pay" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hwpay_getPurchaseHistory"
+            android:layout_width="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Get Purchase History" />
+
+        <Spinner
+            android:id="@+id/spinner_getPurchaseHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:spinnerMode="dropdown"
+            android:padding = "2dp"
+            android:layout_margin = "2dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hwpay_getBuyIntent"
+            android:layout_width="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="Buy Commodity" />
+
+        <Spinner
+            android:id="@+id/spinner_getBuyIntent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:spinnerMode="dropdown"
+            android:padding = "2dp"
+            android:layout_margin = "2dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hwpay_consumePurchase"
+        style="@style/ButtonStyle"
+        android:text="Consume Purchase" />
+
+    <Button
+        android:id="@+id/hwpay_jupmsubscriptions"
+        style="@style/ButtonStyle"
+        android:text="Manage Subscription" />
+
+    <Button
+        android:id="@+id/hwpay_jupmsubscriptionsdetail"
+        style="@style/ButtonStyle"
+        android:text="Get Subscription Details" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

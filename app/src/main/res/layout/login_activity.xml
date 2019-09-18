@@ -21,28 +21,28 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btn_id"
+            android:id="@+id/btn_SignInIDToken"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:background="@color/accent"
-            android:text="Test" />
+            android:text="Sign In" />
 
         <Button
-            android:id="@+id/btn_signin"
+            android:id="@+id/btn_revokeAuthorization"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:background="@color/primary_dark"
-            android:text="Sign In" />
+            android:text="Revoke Auth" />
 
         <Button
-            android:id="@+id/btn_forcesignin"
+            android:id="@+id/btn_silentSignin"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:background="@color/primary_light"
-            android:text="Force Signin" />
+            android:text="Silent Signin" />
 
         <Button
             android:id="@+id/btn_signout"

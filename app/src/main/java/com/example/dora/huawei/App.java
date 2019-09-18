@@ -3,8 +3,8 @@ package com.example.dora.huawei;
 import android.app.Application;
 import android.util.Log;
 
-import com.huawei.android.hms.agent.HMSAgent;
-import com.huawei.android.hms.agent.common.handler.ConnectHandler;
+//import com.huawei.android.hms.agent.HMSAgent;
+//import com.huawei.android.hms.agent.common.handler.ConnectHandler;
 
 public class App extends Application {
 
@@ -13,12 +13,12 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         // Required initialization logic here!
-       boolean init = HMSAgent.init(this);
+      /* boolean init = HMSAgent.init(this);
        if (init) {
            Log.e(TAG, "App onCreate: Init HMSAgent Success");
        }else {
            Log.e(TAG, "App onCreate: Init HMSAgent failed");
-       }
+       }*/
 
     }
 

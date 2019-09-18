@@ -24,7 +24,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 -ignorewarning
-
 -keepattributes *Annotation*
 -keepattributes Exceptions
 -keepattributes InnerClasses
@@ -33,5 +32,3 @@
 -keep class com.hianalytics.android.**{*;}
 -keep class com.huawei.updatesdk.**{*;}
 -keep class com.huawei.hms.**{*;}
-
--keep class com.huawei.android.hms.agent.**{*;}

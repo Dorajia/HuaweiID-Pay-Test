@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.hms:iap:3.0.0.300@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/iap-3.0.0.300.aar/f06a1e1b54a6bba7d433a49356946f50/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/iap-3.0.0.300.aar/f06a1e1b54a6bba7d433a49356946f50/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

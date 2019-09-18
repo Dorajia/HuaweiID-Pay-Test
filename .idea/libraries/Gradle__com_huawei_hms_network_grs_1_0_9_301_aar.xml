@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.hms:network-grs:1.0.9.301@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/network-grs-1.0.9.301.aar/c99422394a7a0856f03262e5e13e2e69/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/network-grs-1.0.9.301.aar/c99422394a7a0856f03262e5e13e2e69/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
